@@ -82,7 +82,7 @@ public class MobileCardService {
             info.append("短信条数为").append(servicePackage.getSmsCount()).append("条/月,");
         }
         // 上网流量
-        if (servicePackage.getTalkTime() != 0) {
+        if (servicePackage.getFlow() != 0) {
             info.append("上网流量为").append(servicePackage.getFlow() / 1024).append("GB/月,");
         }
         System.out.println(info);
