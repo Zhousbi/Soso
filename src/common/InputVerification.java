@@ -67,8 +67,8 @@ public enum InputVerification {
     public static String getInput(InputVerification ver) {
         String result;
         while (true) {
+            System.out.print(ver.inputNote);
             result = INPUT.next();
-            System.out.println(result);
             if (verify(result, ver)) {
                 return result;
             }
